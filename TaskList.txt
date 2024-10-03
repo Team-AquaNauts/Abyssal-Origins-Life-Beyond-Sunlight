@@ -1,0 +1,11 @@
+*****Making and Getting the Web GL build 
+[] Fetching the webGL build in local server and testing it out
+[] Fetching the data to frontend 
+[] Making necessary react routes to consume the build API 
+[] Making some nasa API requests from react using axios 
+--- All set 
+[] Making a beautiful landing Page 
+[] Setting up login page 
+[] Handling Authentication Bcrypt + Passport JS 
+[] Connecting Everything Together 
+Making a database to persist data :/

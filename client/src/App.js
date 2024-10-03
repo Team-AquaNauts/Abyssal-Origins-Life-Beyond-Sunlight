@@ -1,34 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import { useState } from 'react';
+
+import Hero from './Sections/Hero'
+import Header from './Sections/Header'
+import LearningOutcomes from './Sections/LearningOutcomes'  
+import AboutUs from './Sections/AboutUs'
+import Footer from './Sections/Footer';
 
 function App() {
-  const [backendData,setBackendData]=useState('');
-  useEffect(
-    ()=>{
-      fetch("./hello").then(
-        response=>response.json()
-      ).then(
-        data=>{
-          backendData=data;
-          console.log("Backend is ready");
-          
-        }
-      )
-    },
-  [])
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
-      <p>
-        <p>
-         {backendData} is working ! 
-        </p>
-      </p>
+      <Header/>
+      <Hero/>
+      <LearningOutcomes/>
+      <AboutUs/>
+      <Footer/>
     </div>
   );
 }
